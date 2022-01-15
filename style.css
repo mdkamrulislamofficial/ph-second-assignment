@@ -57,11 +57,17 @@ p{
 /* ---------------------------------
        HERO SECTION STYLING
     ------------------------------*/
+.hero-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: end;
+}
 .main-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    justify-items: end
+    justify-items: end;
 }
 #hero-heading{
     font-size: 52px;
@@ -111,6 +117,7 @@ button{
 .popular-products-collection{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     grid-gap: 30px;
 }
 .product{
@@ -203,12 +210,14 @@ padding: 10px;
         font-size: 14px;
         color: #787885;
     }
+    .navigation{
+        display: none;
+    }
     .main-container{
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
         padding-top: 50px;
         padding-bottom: 20px;
-        justify-items: center
     }#hero-heading{
         font-size: 28px;
         text-align: center;
@@ -224,21 +233,22 @@ padding: 10px;
     .other-companies{
         display: none;
     }
-        .popular-products-collection{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr );
-        }
-        .contact-us{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 350px;
-            height: 150px;
-            border-radius: 7px;
-            margin-bottom: 50px;
-            box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.1);
-        }
-        .contact-us h2{
-            font-size: 2px;
+    .popular-products-collection{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr );
+        justify-content: center;
+    }
+    .contact-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        height: 150px;
+        border-radius: 7px;
+        margin-bottom: 50px;
+        box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.1);
+    }
+    .contact-us h2{
+        font-size: 19px;
         }
     }
